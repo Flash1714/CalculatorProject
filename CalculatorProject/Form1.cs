@@ -102,7 +102,6 @@ namespace CalculatorProject
         private void bttClear_Click(object sender, EventArgs e)
         {
             CalcDisplay.Text = "";
-            userInput = "";
             firstOp = "";
             secondOp = "";
             result = 0.0;
@@ -131,6 +130,14 @@ namespace CalculatorProject
             
             CalcDisplay.Text = Convert.ToString(result);
 
+        }
+
+        private void bttBack_Click(object sender, EventArgs e)
+        {
+            string temp = CalcDisplay.Text.ToString();
+            int length = temp.Length;
+            temp.Remove(length - 1);
+            CalcDisplay.Text = temp;
         }
     }
 
