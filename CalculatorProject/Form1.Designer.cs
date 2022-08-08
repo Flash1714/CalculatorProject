@@ -46,6 +46,7 @@
             this.bttDiv = new System.Windows.Forms.Button();
             this.bttClear = new System.Windows.Forms.Button();
             this.CalcDisplay = new System.Windows.Forms.Label();
+            this.bttBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btt1
@@ -261,7 +262,7 @@
             this.bttClear.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.bttClear.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bttClear.ForeColor = System.Drawing.Color.Snow;
-            this.bttClear.Location = new System.Drawing.Point(144, 494);
+            this.bttClear.Location = new System.Drawing.Point(12, 494);
             this.bttClear.Name = "bttClear";
             this.bttClear.Size = new System.Drawing.Size(248, 49);
             this.bttClear.TabIndex = 16;
@@ -280,12 +281,26 @@
             this.CalcDisplay.TabIndex = 17;
             this.CalcDisplay.Text = "0";
             // 
+            // bttBack
+            // 
+            this.bttBack.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bttBack.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bttBack.ForeColor = System.Drawing.Color.Snow;
+            this.bttBack.Location = new System.Drawing.Point(276, 494);
+            this.bttBack.Name = "bttBack";
+            this.bttBack.Size = new System.Drawing.Size(248, 49);
+            this.bttBack.TabIndex = 18;
+            this.bttBack.Text = "Backspace";
+            this.bttBack.UseVisualStyleBackColor = false;
+            this.bttBack.Click += new System.EventHandler(this.bttBack_Click);
+            // 
             // CalculatorProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(535, 581);
+            this.Controls.Add(this.bttBack);
             this.Controls.Add(this.CalcDisplay);
             this.Controls.Add(this.bttClear);
             this.Controls.Add(this.bttDiv);
@@ -333,5 +348,6 @@
         private Button bttDiv;
         private Button bttClear;
         private Label CalcDisplay;
+        private Button bttBack;
     }
 }

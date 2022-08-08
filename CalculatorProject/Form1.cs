@@ -131,6 +131,13 @@ namespace CalculatorProject
             CalcDisplay.Text = Convert.ToString(result);
 
         }
+
+        private void bttBack_Click(object sender, EventArgs e)
+        {
+            string temp = CalcDisplay.Text.ToString();
+            int length = temp.Length;
+            CalcDisplay.Text = temp.Remove(length - 1);
+        }
     }
 
 }
