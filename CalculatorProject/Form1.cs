@@ -125,7 +125,7 @@ namespace CalculatorProject
             }
             catch(Exception)
             {
-                CalcDisplay.Text = "Star over";
+                CalcDisplay.Text = "You Dumb?";
                 validCalc = false;
             }
             if (whatToDo == '+' && validCalc)
