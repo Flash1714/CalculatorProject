@@ -9,7 +9,8 @@ namespace CalculatorProject
 
         private void CalculatorProject_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
+
 }
