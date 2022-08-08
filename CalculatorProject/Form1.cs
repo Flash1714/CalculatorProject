@@ -6,6 +6,7 @@ namespace CalculatorProject
         string secondOp = "";
         char whatToDo;
         double result = 0.0;
+        bool validCalc = true;
         public CalculatorProject()
         {
             InitializeComponent();
@@ -118,25 +119,45 @@ namespace CalculatorProject
         private void bttEquals_Click(object sender, EventArgs e)
         {
             secondOp = CalcDisplay.Text.ToString();
-            if (whatToDo == '+')
+            try
+            {
+                double test = Convert.ToDouble(firstOp) + Convert.ToDouble(secondOp);
+            }
+            catch(Exception)
+            {
+                CalcDisplay.Text = "Star over";
+                validCalc = false;
+            }
+            if (whatToDo == '+' && validCalc)
             {
                 result = Convert.ToDouble(firstOp) + Convert.ToDouble(secondOp);
+                CalcDisplay.Text = Convert.ToString(result);
 
             }
-            else if (whatToDo == '-')
+            else if (whatToDo == '-' && validCalc)
             {
                 result = Convert.ToDouble(firstOp) - Convert.ToDouble(secondOp);
+                CalcDisplay.Text = Convert.ToString(result);
             }
-            else if (whatToDo == '*')
+            else if (whatToDo == '*' && validCalc)
             {
                 result = Convert.ToDouble(firstOp) * Convert.ToDouble(secondOp);
+                CalcDisplay.Text = Convert.ToString(result);
             }
-            else if (whatToDo == '/')
+            else if (whatToDo == '/' && validCalc)
             {
-                result = Convert.ToDouble(firstOp) / Convert.ToDouble(secondOp);
+                if (Convert.ToDouble(secondOp) == 0)
+                {
+                    CalcDisplay.Text = "Stop that";
+                }
+                else
+                {
+                    result = Convert.ToDouble(firstOp) / Convert.ToDouble(secondOp);
+                    CalcDisplay.Text = Convert.ToString(result);
+                }
+                
             }
             
-            CalcDisplay.Text = Convert.ToString(result);
 
         }
 
