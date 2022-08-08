@@ -44,6 +44,7 @@
             this.bttDecimal = new System.Windows.Forms.Button();
             this.bttEquals = new System.Windows.Forms.Button();
             this.bttDiv = new System.Windows.Forms.Button();
+            this.bttClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btt1
@@ -123,7 +124,7 @@
             this.btt3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btt3.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btt3.ForeColor = System.Drawing.Color.Snow;
-            this.btt3.Location = new System.Drawing.Point(275, 192);
+            this.btt3.Location = new System.Drawing.Point(276, 192);
             this.btt3.Name = "btt3";
             this.btt3.Size = new System.Drawing.Size(116, 49);
             this.btt3.TabIndex = 6;
@@ -135,7 +136,7 @@
             this.btt6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btt6.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btt6.ForeColor = System.Drawing.Color.Snow;
-            this.btt6.Location = new System.Drawing.Point(275, 269);
+            this.btt6.Location = new System.Drawing.Point(276, 269);
             this.btt6.Name = "btt6";
             this.btt6.Size = new System.Drawing.Size(116, 49);
             this.btt6.TabIndex = 7;
@@ -147,7 +148,7 @@
             this.btt9.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btt9.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btt9.ForeColor = System.Drawing.Color.Snow;
-            this.btt9.Location = new System.Drawing.Point(275, 346);
+            this.btt9.Location = new System.Drawing.Point(276, 346);
             this.btt9.Name = "btt9";
             this.btt9.Size = new System.Drawing.Size(116, 49);
             this.btt9.TabIndex = 8;
@@ -171,7 +172,7 @@
             this.bttPlus.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.bttPlus.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bttPlus.ForeColor = System.Drawing.Color.Snow;
-            this.bttPlus.Location = new System.Drawing.Point(407, 192);
+            this.bttPlus.Location = new System.Drawing.Point(408, 192);
             this.bttPlus.Name = "bttPlus";
             this.bttPlus.Size = new System.Drawing.Size(116, 49);
             this.bttPlus.TabIndex = 10;
@@ -183,7 +184,7 @@
             this.bttMinus.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.bttMinus.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bttMinus.ForeColor = System.Drawing.Color.Snow;
-            this.bttMinus.Location = new System.Drawing.Point(407, 269);
+            this.bttMinus.Location = new System.Drawing.Point(408, 269);
             this.bttMinus.Name = "bttMinus";
             this.bttMinus.Size = new System.Drawing.Size(116, 49);
             this.bttMinus.TabIndex = 11;
@@ -195,7 +196,7 @@
             this.bttMult.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.bttMult.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bttMult.ForeColor = System.Drawing.Color.Snow;
-            this.bttMult.Location = new System.Drawing.Point(407, 346);
+            this.bttMult.Location = new System.Drawing.Point(408, 346);
             this.bttMult.Name = "bttMult";
             this.bttMult.Size = new System.Drawing.Size(116, 49);
             this.bttMult.TabIndex = 12;
@@ -219,7 +220,7 @@
             this.bttEquals.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.bttEquals.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bttEquals.ForeColor = System.Drawing.Color.Snow;
-            this.bttEquals.Location = new System.Drawing.Point(275, 423);
+            this.bttEquals.Location = new System.Drawing.Point(276, 423);
             this.bttEquals.Name = "bttEquals";
             this.bttEquals.Size = new System.Drawing.Size(116, 49);
             this.bttEquals.TabIndex = 14;
@@ -231,19 +232,32 @@
             this.bttDiv.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.bttDiv.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bttDiv.ForeColor = System.Drawing.Color.Snow;
-            this.bttDiv.Location = new System.Drawing.Point(407, 423);
+            this.bttDiv.Location = new System.Drawing.Point(408, 423);
             this.bttDiv.Name = "bttDiv";
             this.bttDiv.Size = new System.Drawing.Size(116, 49);
             this.bttDiv.TabIndex = 15;
             this.bttDiv.Text = "/";
             this.bttDiv.UseVisualStyleBackColor = false;
             // 
+            // bttClear
+            // 
+            this.bttClear.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bttClear.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bttClear.ForeColor = System.Drawing.Color.Snow;
+            this.bttClear.Location = new System.Drawing.Point(144, 494);
+            this.bttClear.Name = "bttClear";
+            this.bttClear.Size = new System.Drawing.Size(248, 49);
+            this.bttClear.TabIndex = 16;
+            this.bttClear.Text = "CE";
+            this.bttClear.UseVisualStyleBackColor = false;
+            // 
             // CalculatorProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(535, 521);
+            this.ClientSize = new System.Drawing.Size(535, 581);
+            this.Controls.Add(this.bttClear);
             this.Controls.Add(this.bttDiv);
             this.Controls.Add(this.bttEquals);
             this.Controls.Add(this.bttDecimal);
@@ -287,5 +301,6 @@
         private Button bttDecimal;
         private Button bttEquals;
         private Button bttDiv;
+        private Button bttClear;
     }
 }
