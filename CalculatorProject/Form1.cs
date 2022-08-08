@@ -126,6 +126,7 @@ namespace CalculatorProject
             else if (whatToDo == '/')
             {
                 result = Convert.ToDouble(firstOp) / Convert.ToDouble(secondOp);
+                // Handle divide by zero error
             }
             
             CalcDisplay.Text = Convert.ToString(result);
