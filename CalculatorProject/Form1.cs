@@ -16,6 +16,7 @@ namespace CalculatorProject
             
         }
 
+        //For all buttons we add that chara to the CalcDisplay lable text
         private void btt1_Click(object sender, EventArgs e)
         {
             CalcDisplay.Text += "1";
@@ -71,6 +72,9 @@ namespace CalculatorProject
             CalcDisplay.Text += ".";
         }
 
+        /*For operators when a button is clicked all data on the screen is taken as the first operand
+         the WhatToDo operator is set to the button pressed and display is cleared.
+         */
         private void bttPlus_Click(object sender, EventArgs e)
         {
             whatToDo = '+';
@@ -99,6 +103,7 @@ namespace CalculatorProject
             CalcDisplay.Text = "";
         }
 
+        // Clear button just clears everything
         private void bttClear_Click(object sender, EventArgs e)
         {
             CalcDisplay.Text = "";
@@ -106,6 +111,9 @@ namespace CalculatorProject
             secondOp = "";
             result = 0.0;
         }
+
+        // When equals is clicked convert both the operands to double and calculate result. Print result on
+        // the text box. 
 
         private void bttEquals_Click(object sender, EventArgs e)
         {
@@ -132,6 +140,7 @@ namespace CalculatorProject
 
         }
 
+        // removing last character of text for backspace
         private void bttBack_Click(object sender, EventArgs e)
         {
             string temp = CalcDisplay.Text.ToString();
