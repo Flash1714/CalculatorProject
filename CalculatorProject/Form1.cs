@@ -102,7 +102,6 @@ namespace CalculatorProject
         private void bttClear_Click(object sender, EventArgs e)
         {
             CalcDisplay.Text = "";
-            userInput = "";
             firstOp = "";
             secondOp = "";
             result = 0.0;
