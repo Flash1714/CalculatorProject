@@ -45,6 +45,7 @@
             this.bttEquals = new System.Windows.Forms.Button();
             this.bttDiv = new System.Windows.Forms.Button();
             this.bttClear = new System.Windows.Forms.Button();
+            this.CalcDisplay = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btt1
@@ -58,6 +59,7 @@
             this.btt1.TabIndex = 0;
             this.btt1.Text = "1";
             this.btt1.UseVisualStyleBackColor = false;
+            this.btt1.Click += new System.EventHandler(this.btt1_Click);
             // 
             // btt2
             // 
@@ -70,6 +72,7 @@
             this.btt2.TabIndex = 1;
             this.btt2.Text = "2";
             this.btt2.UseVisualStyleBackColor = false;
+            this.btt2.Click += new System.EventHandler(this.btt2_Click);
             // 
             // btt7
             // 
@@ -82,6 +85,7 @@
             this.btt7.TabIndex = 2;
             this.btt7.Text = "7";
             this.btt7.UseVisualStyleBackColor = false;
+            this.btt7.Click += new System.EventHandler(this.btt7_Click);
             // 
             // btt4
             // 
@@ -94,6 +98,7 @@
             this.btt4.TabIndex = 3;
             this.btt4.Text = "4";
             this.btt4.UseVisualStyleBackColor = false;
+            this.btt4.Click += new System.EventHandler(this.btt4_Click);
             // 
             // btt5
             // 
@@ -106,6 +111,7 @@
             this.btt5.TabIndex = 4;
             this.btt5.Text = "5";
             this.btt5.UseVisualStyleBackColor = false;
+            this.btt5.Click += new System.EventHandler(this.btt5_Click);
             // 
             // btt8
             // 
@@ -118,6 +124,7 @@
             this.btt8.TabIndex = 5;
             this.btt8.Text = "8";
             this.btt8.UseVisualStyleBackColor = false;
+            this.btt8.Click += new System.EventHandler(this.btt8_Click);
             // 
             // btt3
             // 
@@ -130,6 +137,7 @@
             this.btt3.TabIndex = 6;
             this.btt3.Text = "3";
             this.btt3.UseVisualStyleBackColor = false;
+            this.btt3.Click += new System.EventHandler(this.btt3_Click);
             // 
             // btt6
             // 
@@ -142,6 +150,7 @@
             this.btt6.TabIndex = 7;
             this.btt6.Text = "6";
             this.btt6.UseVisualStyleBackColor = false;
+            this.btt6.Click += new System.EventHandler(this.btt6_Click);
             // 
             // btt9
             // 
@@ -154,6 +163,7 @@
             this.btt9.TabIndex = 8;
             this.btt9.Text = "9";
             this.btt9.UseVisualStyleBackColor = false;
+            this.btt9.Click += new System.EventHandler(this.btt9_Click);
             // 
             // btt0
             // 
@@ -166,6 +176,7 @@
             this.btt0.TabIndex = 9;
             this.btt0.Text = "0";
             this.btt0.UseVisualStyleBackColor = false;
+            this.btt0.Click += new System.EventHandler(this.btt0_Click);
             // 
             // bttPlus
             // 
@@ -178,6 +189,7 @@
             this.bttPlus.TabIndex = 10;
             this.bttPlus.Text = "+";
             this.bttPlus.UseVisualStyleBackColor = false;
+            this.bttPlus.Click += new System.EventHandler(this.bttPlus_Click);
             // 
             // bttMinus
             // 
@@ -190,6 +202,7 @@
             this.bttMinus.TabIndex = 11;
             this.bttMinus.Text = "-";
             this.bttMinus.UseVisualStyleBackColor = false;
+            this.bttMinus.Click += new System.EventHandler(this.bttMinus_Click);
             // 
             // bttMult
             // 
@@ -202,6 +215,7 @@
             this.bttMult.TabIndex = 12;
             this.bttMult.Text = "*";
             this.bttMult.UseVisualStyleBackColor = false;
+            this.bttMult.Click += new System.EventHandler(this.bttMult_Click);
             // 
             // bttDecimal
             // 
@@ -214,6 +228,7 @@
             this.bttDecimal.TabIndex = 13;
             this.bttDecimal.Text = ".";
             this.bttDecimal.UseVisualStyleBackColor = false;
+            this.bttDecimal.Click += new System.EventHandler(this.bttDecimal_Click);
             // 
             // bttEquals
             // 
@@ -226,6 +241,7 @@
             this.bttEquals.TabIndex = 14;
             this.bttEquals.Text = "=";
             this.bttEquals.UseVisualStyleBackColor = false;
+            this.bttEquals.Click += new System.EventHandler(this.bttEquals_Click);
             // 
             // bttDiv
             // 
@@ -238,6 +254,7 @@
             this.bttDiv.TabIndex = 15;
             this.bttDiv.Text = "/";
             this.bttDiv.UseVisualStyleBackColor = false;
+            this.bttDiv.Click += new System.EventHandler(this.bttDiv_Click);
             // 
             // bttClear
             // 
@@ -250,6 +267,18 @@
             this.bttClear.TabIndex = 16;
             this.bttClear.Text = "CE";
             this.bttClear.UseVisualStyleBackColor = false;
+            this.bttClear.Click += new System.EventHandler(this.bttClear_Click);
+            // 
+            // CalcDisplay
+            // 
+            this.CalcDisplay.Font = new System.Drawing.Font("Imprint MT Shadow", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.CalcDisplay.ForeColor = System.Drawing.Color.Snow;
+            this.CalcDisplay.Location = new System.Drawing.Point(12, 74);
+            this.CalcDisplay.Name = "CalcDisplay";
+            this.CalcDisplay.Padding = new System.Windows.Forms.Padding(1);
+            this.CalcDisplay.Size = new System.Drawing.Size(511, 80);
+            this.CalcDisplay.TabIndex = 17;
+            this.CalcDisplay.Text = "0";
             // 
             // CalculatorProject
             // 
@@ -257,6 +286,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(535, 581);
+            this.Controls.Add(this.CalcDisplay);
             this.Controls.Add(this.bttClear);
             this.Controls.Add(this.bttDiv);
             this.Controls.Add(this.bttEquals);
@@ -302,5 +332,6 @@
         private Button bttEquals;
         private Button bttDiv;
         private Button bttClear;
+        private Label CalcDisplay;
     }
 }
