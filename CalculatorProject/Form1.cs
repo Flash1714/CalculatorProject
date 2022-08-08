@@ -136,8 +136,7 @@ namespace CalculatorProject
         {
             string temp = CalcDisplay.Text.ToString();
             int length = temp.Length;
-            temp.Remove(length - 1);
-            CalcDisplay.Text = temp;
+            CalcDisplay.Text = temp.Remove(length - 1);
         }
     }
 
